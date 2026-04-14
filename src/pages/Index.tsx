@@ -360,7 +360,7 @@ export default function Index() {
       >
         <div className="container mx-auto px-6 py-5 flex items-center justify-between max-w-7xl">
           <a href="#" className="font-display text-2xl font-light tracking-widest" style={{ color: "var(--gold)" }}>
-            RENOVEX
+            UM SOL
           </a>
           <div className="hidden md:flex items-center gap-10">
             {[
@@ -826,10 +826,10 @@ export default function Index() {
       <footer className="py-12" style={{ background: "var(--dark-bg)", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
         <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="font-display text-xl font-light tracking-widest" style={{ color: "var(--gold)" }}>
-            RENOVEX
+            UM SOL
           </div>
           <p className="text-xs tracking-widest" style={{ color: "hsl(30,15%,35%)" }}>
-            © 2024 Renovex. Ремонт под ключ в Москве
+            © 2024 UM SOL. Ремонт под ключ в Москве
           </p>
           <div className="flex gap-6">
             {["ВКонтакте", "Telegram", "WhatsApp"].map((s) => (
