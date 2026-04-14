@@ -347,7 +347,7 @@ export default function Index() {
   };
 
   return (
-    <div style={{ background: "var(--dark-bg)", minHeight: "100vh", fontFamily: "'Golos Text', sans-serif" }}>
+    <div style={{ background: "var(--dark-bg)", minHeight: "100vh", fontFamily: "'Manrope', sans-serif" }}>
 
       {/* NAV */}
       <nav
@@ -772,7 +772,7 @@ export default function Index() {
                         style={{
                           border: "1px solid rgba(201,168,76,0.2)",
                           color: "hsl(45,30%,80%)",
-                          fontFamily: "'Golos Text', sans-serif",
+                          fontFamily: "'Manrope', sans-serif",
                         }}
                         onFocus={(e) => (e.target.style.borderColor = "rgba(201,168,76,0.6)")}
                         onBlur={(e) => (e.target.style.borderColor = "rgba(201,168,76,0.2)")}
