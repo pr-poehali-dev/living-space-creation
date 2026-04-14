@@ -346,7 +346,7 @@ export function ContactsSection() {
             {[
               { icon: "Phone", label: "Телефон", value: "+7 (495) 123-45-67" },
               { icon: "Mail", label: "Email", value: "info@renovex.ru" },
-              { icon: "MapPin", label: "Адрес", value: "Москва, ул. Арбат, 1" },
+              { icon: "MapPin", label: "Города", value: "Краснодар и Анапа" },
               { icon: "Clock", label: "Режим работы", value: "Пн–Пт: 9:00–20:00, Сб: 10:00–17:00" },
             ].map((c) => (
               <div
@@ -385,7 +385,7 @@ export function Footer() {
           UM SOL
         </div>
         <p className="text-xs tracking-widest" style={{ color: "hsl(30,15%,35%)" }}>
-          © 2024 UM SOL. Ремонт под ключ в Москве
+          © 2024 UM SOL. Ремонт под ключ в Краснодаре и Анапе
         </p>
         <div className="flex gap-6">
           {["ВКонтакте", "Telegram", "WhatsApp"].map((s) => (

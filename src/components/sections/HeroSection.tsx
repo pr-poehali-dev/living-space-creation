@@ -129,7 +129,7 @@ export function HeroSection({ scrollTo }: HeroSectionProps) {
                 className="inline-block mb-8 px-4 py-2 text-xs tracking-[0.3em] uppercase"
                 style={{ border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}
               >
-                Ремонт в Москве и МО
+                Ремонт в Краснодаре и Анапе
               </div>
               <h1 className="section-title text-5xl md:text-7xl xl:text-8xl mb-8 leading-none" style={{ color: "hsl(45,30%,92%)" }}>
                 Создаём<br />
