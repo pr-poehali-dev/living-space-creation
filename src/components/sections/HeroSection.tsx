@@ -132,9 +132,10 @@ export function HeroSection({ scrollTo }: HeroSectionProps) {
                 Ремонт в Краснодаре и Анапе
               </div>
               <h1 className="section-title text-5xl md:text-7xl xl:text-8xl mb-8 leading-none" style={{ color: "hsl(45,30%,92%)" }}>
-                Создаём<br />
-                <span className="italic gold-gradient">интерьеры</span><br />
-                мечты
+                Система, где<br />
+                <span className="italic gold-gradient">комфорт</span> —<br />
+                это результат,<br />
+                а не случайность
               </h1>
               <p className="text-base leading-relaxed mb-12" style={{ color: "hsl(30,15%,55%)", maxWidth: 440 }}>
                 Ремонт под ключ — от дизайн-проекта до финального клининга. Сдаём в срок, гарантируем качество 5 лет.
