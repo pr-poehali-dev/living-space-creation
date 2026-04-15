@@ -131,7 +131,7 @@ export function HeroSection({ scrollTo }: HeroSectionProps) {
               >
                 Ремонт в Краснодаре и Анапе
               </div>
-              <h1 className="section-title text-5xl md:text-7xl xl:text-8xl mb-8 leading-none" style={{ color: "hsl(45,30%,92%)" }}>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl mb-8 leading-none" style={{ color: "hsl(45,30%,92%)", fontFamily: "'Playfair Display', serif", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Система, где<br />
                 <span className="italic gold-gradient">комфорт</span> —<br />
                 это результат,<br />
