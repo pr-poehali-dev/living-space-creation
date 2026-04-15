@@ -345,7 +345,7 @@ export function ContactsSection() {
           <RevealBlock delay={200} className="flex flex-col justify-between gap-6">
             {[
               { icon: "Phone", label: "Телефон", value: "+7 (909) 448-77-70" },
-              { icon: "Mail", label: "Email", value: "info@renovex.ru" },
+              { icon: "Mail", label: "Email", value: "Um.sol.kr@yandex.ru" },
               { icon: "MapPin", label: "Города", value: "Краснодар и Анапа" },
               { icon: "Clock", label: "Режим работы", value: "Пн–Пт: 9:00–20:00, Сб: 10:00–17:00" },
             ].map((c) => (
