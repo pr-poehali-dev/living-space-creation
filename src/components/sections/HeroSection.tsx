@@ -149,7 +149,7 @@ export function HeroSection({ scrollTo }: HeroSectionProps) {
                 </button>
               </div>
               <div className="flex gap-12 mt-14">
-                {[["500+", "Объектов"], ["15", "Лет опыта"], ["5 лет", "Гарантия"]].map(([n, l]) => (
+                {[["100+", "Объектов"], ["более 15", "Лет опыта работы мастеров"], ["2 года", "Гарантия"]].map(([n, l]) => (
                   <div key={l}>
                     <div className="font-display text-3xl font-light" style={{ color: "var(--gold-light)" }}>{n}</div>
                     <div className="text-xs tracking-widest uppercase mt-1" style={{ color: "hsl(30,15%,45%)" }}>{l}</div>
