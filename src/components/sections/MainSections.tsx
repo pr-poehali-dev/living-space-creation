@@ -81,11 +81,11 @@ export function PortfolioSection() {
         <RevealBlock className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--gold)" }}>Наши работы</p>
-            <h2 className="section-title text-5xl md:text-7xl" style={{ color: "hsl(45,30%,90%)" }}>
+            <h2 className="section-title text-5xl md:text-7xl" style={{ color: "hsl(25,25%,15%)" }}>
               Портфолио
             </h2>
           </div>
-          <p className="text-sm max-w-xs" style={{ color: "hsl(30,15%,50%)" }}>
+          <p className="text-sm max-w-xs" style={{ color: "hsl(25,15%,45%)" }}>
             Каждый объект — это история. Мы превращаем пространство в произведение искусства.
           </p>
         </RevealBlock>
@@ -95,26 +95,26 @@ export function PortfolioSection() {
             <RevealBlock key={p.id} delay={i * 120} className="group card-hover">
               <div
                 className="relative overflow-hidden rounded-sm"
-                style={{ border: "1px solid rgba(201,168,76,0.1)" }}
+                style={{ border: "1px solid rgba(155,122,47,0.15)" }}
               >
                 <div className="aspect-[3/4] overflow-hidden">
                   <img
                     src={p.img}
                     alt={p.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    style={{ filter: "brightness(0.8)" }}
+                    style={{ filter: "brightness(0.9)" }}
                   />
                 </div>
                 <div
                   className="absolute inset-0"
-                  style={{ background: "linear-gradient(to top, rgba(13,10,7,0.9) 30%, transparent 70%)" }}
+                  style={{ background: "linear-gradient(to top, rgba(247,243,238,0.92) 30%, transparent 70%)" }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="gold-line mb-4" />
                   <div className="text-xs tracking-widest uppercase mb-1" style={{ color: "var(--gold)" }}>
                     {p.style} · {p.area}
                   </div>
-                  <h3 className="font-display text-xl font-light" style={{ color: "hsl(45,30%,92%)" }}>
+                  <h3 className="font-display text-xl font-light" style={{ color: "hsl(25,25%,15%)" }}>
                     {p.title}
                   </h3>
                 </div>
@@ -143,7 +143,7 @@ export function AdvantagesSection() {
       <div className="container mx-auto px-6 max-w-7xl">
         <RevealBlock className="text-center mb-20">
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--gold)" }}>Почему мы</p>
-          <h2 className="section-title text-5xl md:text-7xl" style={{ color: "hsl(45,30%,90%)" }}>
+          <h2 className="section-title text-5xl md:text-7xl" style={{ color: "hsl(25,25%,15%)" }}>
             Преимущества
           </h2>
         </RevealBlock>
@@ -155,35 +155,35 @@ export function AdvantagesSection() {
                 className="p-8 rounded-sm h-full"
                 style={{
                   background: "var(--dark-card)",
-                  border: "1px solid rgba(201,168,76,0.1)",
+                  border: "1px solid rgba(155,122,47,0.15)",
                   transition: "all 0.4s ease",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLDivElement;
-                  el.style.borderColor = "rgba(201,168,76,0.4)";
+                  el.style.borderColor = "rgba(155,122,47,0.4)";
                   el.style.transform = "translateY(-8px)";
-                  el.style.boxShadow = "0 30px 60px rgba(0,0,0,0.5), 0 0 30px rgba(201,168,76,0.08)";
+                  el.style.boxShadow = "0 30px 60px rgba(100,80,40,0.12), 0 0 30px rgba(155,122,47,0.08)";
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLDivElement;
-                  el.style.borderColor = "rgba(201,168,76,0.1)";
+                  el.style.borderColor = "rgba(155,122,47,0.15)";
                   el.style.transform = "translateY(0)";
                   el.style.boxShadow = "none";
                 }}
               >
                 <div
                   className="w-12 h-12 flex items-center justify-center mb-6 rounded-sm"
-                  style={{ background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.2)" }}
+                  style={{ background: "rgba(155,122,47,0.08)", border: "1px solid rgba(155,122,47,0.2)" }}
                 >
                   <Icon name={a.icon} fallback="Star" size={20} style={{ color: "var(--gold)" }} />
                 </div>
-                <div className="font-display text-5xl font-light mb-1" style={{ color: "var(--gold-light)" }}>
+                <div className="font-display text-5xl font-light mb-1" style={{ color: "var(--gold)" }}>
                   {a.num}
                 </div>
                 <div className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "var(--gold)" }}>
                   {a.label}
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: "hsl(30,15%,50%)" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "hsl(25,15%,45%)" }}>
                   {a.desc}
                 </p>
               </div>
@@ -203,7 +203,7 @@ export function ReviewsSection() {
       <div className="container mx-auto px-6 max-w-5xl">
         <RevealBlock className="text-center mb-20">
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--gold)" }}>Что говорят клиенты</p>
-          <h2 className="section-title text-5xl md:text-7xl" style={{ color: "hsl(45,30%,90%)" }}>
+          <h2 className="section-title text-5xl md:text-7xl" style={{ color: "hsl(25,25%,15%)" }}>
             Отзывы
           </h2>
         </RevealBlock>
@@ -213,8 +213,8 @@ export function ReviewsSection() {
             <div
               className="p-10 md:p-14 rounded-sm"
               style={{
-                background: "linear-gradient(145deg, #1C1610, #0D0A07)",
-                border: "1px solid rgba(201,168,76,0.2)",
+                background: "linear-gradient(145deg, #ede6db, #f7f3ee)",
+                border: "1px solid rgba(155,122,47,0.2)",
                 minHeight: 280,
               }}
             >
@@ -225,16 +225,16 @@ export function ReviewsSection() {
               </div>
               <blockquote
                 className="font-display text-2xl md:text-3xl font-light italic leading-relaxed mb-10"
-                style={{ color: "hsl(45,30%,85%)" }}
+                style={{ color: "hsl(25,25%,20%)" }}
               >
                 «{REVIEWS[activeReview].text}»
               </blockquote>
               <div className="flex items-center justify-between flex-wrap gap-6">
                 <div>
-                  <div className="font-semibold text-sm" style={{ color: "hsl(45,30%,80%)" }}>
+                  <div className="font-semibold text-sm" style={{ color: "hsl(25,25%,20%)" }}>
                     {REVIEWS[activeReview].name}
                   </div>
-                  <div className="text-xs mt-1" style={{ color: "hsl(30,15%,45%)" }}>
+                  <div className="text-xs mt-1" style={{ color: "hsl(25,15%,50%)" }}>
                     {REVIEWS[activeReview].role}
                   </div>
                 </div>
@@ -247,7 +247,7 @@ export function ReviewsSection() {
                         width: i === activeReview ? 32 : 10,
                         height: 4,
                         borderRadius: 2,
-                        background: i === activeReview ? "var(--gold)" : "rgba(201,168,76,0.25)",
+                        background: i === activeReview ? "var(--gold)" : "rgba(155,122,47,0.25)",
                         transition: "all 0.3s",
                         border: "none",
                         cursor: "pointer",
@@ -263,8 +263,8 @@ export function ReviewsSection() {
               <button
                 onClick={() => setActiveReview((activeReview - 1 + REVIEWS.length) % REVIEWS.length)}
                 className="w-12 h-12 flex items-center justify-center rounded-sm transition-all duration-300"
-                style={{ border: "1px solid rgba(201,168,76,0.2)", color: "var(--gold)", background: "transparent" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(201,168,76,0.1)")}
+                style={{ border: "1px solid rgba(155,122,47,0.25)", color: "var(--gold)", background: "transparent" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(155,122,47,0.08)")}
                 onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
               >
                 <Icon name="ChevronLeft" size={18} />
@@ -272,8 +272,8 @@ export function ReviewsSection() {
               <button
                 onClick={() => setActiveReview((activeReview + 1) % REVIEWS.length)}
                 className="w-12 h-12 flex items-center justify-center rounded-sm transition-all duration-300"
-                style={{ border: "1px solid rgba(201,168,76,0.2)", color: "var(--gold)", background: "transparent" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(201,168,76,0.1)")}
+                style={{ border: "1px solid rgba(155,122,47,0.25)", color: "var(--gold)", background: "transparent" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(155,122,47,0.08)")}
                 onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
               >
                 <Icon name="ChevronRight" size={18} />
@@ -292,10 +292,10 @@ export function ContactsSection() {
       <div className="container mx-auto px-6 max-w-5xl">
         <RevealBlock className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--gold)" }}>Обсудим ваш проект</p>
-          <h2 className="section-title text-5xl md:text-7xl mb-6" style={{ color: "hsl(45,30%,90%)" }}>
+          <h2 className="section-title text-5xl md:text-7xl mb-6" style={{ color: "hsl(25,25%,15%)" }}>
             Контакты
           </h2>
-          <p className="text-base" style={{ color: "hsl(30,15%,50%)", maxWidth: 440, margin: "0 auto" }}>
+          <p className="text-base" style={{ color: "hsl(25,15%,45%)", maxWidth: 440, margin: "0 auto" }}>
             Оставьте заявку — перезвоним в течение 15 минут и ответим на все вопросы
           </p>
         </RevealBlock>
@@ -305,8 +305,8 @@ export function ContactsSection() {
             <div
               className="p-10 rounded-sm"
               style={{
-                background: "linear-gradient(145deg, #1C1610, #0D0A07)",
-                border: "1px solid rgba(201,168,76,0.2)",
+                background: "linear-gradient(145deg, #ede6db, #f7f3ee)",
+                border: "1px solid rgba(155,122,47,0.2)",
               }}
             >
               <div className="space-y-6">
@@ -323,19 +323,19 @@ export function ContactsSection() {
                       placeholder={f.placeholder}
                       className="w-full bg-transparent py-3 px-4 text-sm outline-none transition-all duration-300 rounded-sm"
                       style={{
-                        border: "1px solid rgba(201,168,76,0.2)",
-                        color: "hsl(45,30%,80%)",
+                        border: "1px solid rgba(155,122,47,0.25)",
+                        color: "hsl(25,25%,20%)",
                         fontFamily: "'Manrope', sans-serif",
                       }}
-                      onFocus={(e) => (e.target.style.borderColor = "rgba(201,168,76,0.6)")}
-                      onBlur={(e) => (e.target.style.borderColor = "rgba(201,168,76,0.2)")}
+                      onFocus={(e) => (e.target.style.borderColor = "rgba(155,122,47,0.6)")}
+                      onBlur={(e) => (e.target.style.borderColor = "rgba(155,122,47,0.25)")}
                     />
                   </div>
                 ))}
                 <button className="btn-gold w-full rounded-sm mt-4">
                   <span>Отправить заявку</span>
                 </button>
-                <p className="text-xs text-center" style={{ color: "hsl(30,15%,35%)" }}>
+                <p className="text-xs text-center" style={{ color: "hsl(25,15%,50%)" }}>
                   Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
               </div>
@@ -352,19 +352,19 @@ export function ContactsSection() {
               <div
                 key={c.label}
                 className="flex items-center gap-5 p-5 rounded-sm"
-                style={{ background: "rgba(201,168,76,0.04)", border: "1px solid rgba(201,168,76,0.1)" }}
+                style={{ background: "rgba(155,122,47,0.05)", border: "1px solid rgba(155,122,47,0.15)" }}
               >
                 <div
                   className="w-10 h-10 flex items-center justify-center flex-shrink-0 rounded-sm"
-                  style={{ background: "rgba(201,168,76,0.1)" }}
+                  style={{ background: "rgba(155,122,47,0.1)" }}
                 >
                   <Icon name={c.icon} fallback="Star" size={18} style={{ color: "var(--gold)" }} />
                 </div>
                 <div>
-                  <div className="text-xs tracking-widest uppercase mb-0.5" style={{ color: "hsl(30,15%,45%)" }}>
+                  <div className="text-xs tracking-widest uppercase mb-0.5" style={{ color: "hsl(25,15%,50%)" }}>
                     {c.label}
                   </div>
-                  <div className="text-sm font-medium" style={{ color: "hsl(45,30%,80%)" }}>
+                  <div className="text-sm font-medium" style={{ color: "hsl(25,25%,20%)" }}>
                     {c.value}
                   </div>
                 </div>
@@ -379,17 +379,17 @@ export function ContactsSection() {
 
 export function Footer() {
   return (
-    <footer className="py-12" style={{ background: "var(--dark-bg)", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
+    <footer className="py-12" style={{ background: "var(--dark-bg)", borderTop: "1px solid rgba(155,122,47,0.15)" }}>
       <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="font-display text-xl font-light tracking-widest" style={{ color: "var(--gold)" }}>
           UM SOL
         </div>
-        <p className="text-xs tracking-widest" style={{ color: "hsl(30,15%,35%)" }}>
+        <p className="text-xs tracking-widest" style={{ color: "hsl(25,15%,50%)" }}>
           © 2024 UM SOL. Ремонт под ключ в Краснодаре и Анапе
         </p>
         <div className="flex gap-6">
           {["ВКонтакте", "Telegram", "WhatsApp"].map((s) => (
-            <a key={s} href="#" className="text-xs tracking-widest uppercase nav-link" style={{ color: "hsl(30,15%,45%)" }}>
+            <a key={s} href="#" className="text-xs tracking-widest uppercase nav-link" style={{ color: "hsl(25,15%,45%)" }}>
               {s}
             </a>
           ))}

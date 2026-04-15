@@ -45,11 +45,11 @@ export function Calculator() {
           <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "var(--gold)" }}>
             Онлайн-расчёт
           </p>
-          <h2 className="section-title text-5xl md:text-7xl mb-6" style={{ color: "hsl(45, 30%, 90%)" }}>
+          <h2 className="section-title text-5xl md:text-7xl mb-6" style={{ color: "hsl(25, 25%, 15%)" }}>
             Калькулятор<br />
             <span className="gold-gradient">стоимости</span>
           </h2>
-          <p className="text-base" style={{ color: "hsl(30, 15%, 55%)", maxWidth: 440, margin: "0 auto" }}>
+          <p className="text-base" style={{ color: "hsl(25, 15%, 45%)", maxWidth: 440, margin: "0 auto" }}>
             Предварительный расчёт за 30 секунд — без звонков и ожидания
           </p>
         </RevealBlock>
@@ -67,9 +67,9 @@ export function Calculator() {
                     onClick={() => { setRoom(r.id); setArea(r.base); }}
                     className="py-3 px-4 text-sm transition-all duration-300 rounded-sm"
                     style={{
-                      background: room === r.id ? "var(--gold)" : "rgba(201,168,76,0.05)",
-                      color: room === r.id ? "var(--dark-bg)" : "hsl(45, 30%, 70%)",
-                      border: room === r.id ? "1px solid var(--gold)" : "1px solid rgba(201,168,76,0.15)",
+                      background: room === r.id ? "var(--gold)" : "rgba(155,122,47,0.06)",
+                      color: room === r.id ? "#fff" : "hsl(25, 20%, 30%)",
+                      border: room === r.id ? "1px solid var(--gold)" : "1px solid rgba(155,122,47,0.2)",
                       fontWeight: room === r.id ? 600 : 400,
                     }}
                   >
@@ -84,7 +84,7 @@ export function Calculator() {
                 <p className="text-xs tracking-[0.2em] uppercase" style={{ color: "var(--gold)" }}>
                   Площадь
                 </p>
-                <span className="font-display text-3xl" style={{ color: "hsl(45,30%,90%)" }}>
+                <span className="font-display text-3xl" style={{ color: "hsl(25,25%,15%)" }}>
                   {area} <span className="text-base font-body" style={{ color: "var(--gold)" }}>м²</span>
                 </span>
               </div>
@@ -96,7 +96,7 @@ export function Calculator() {
                 onChange={(e) => setArea(+e.target.value)}
                 className="range-gold w-full"
               />
-              <div className="flex justify-between mt-2 text-xs" style={{ color: "hsl(30,15%,45%)" }}>
+              <div className="flex justify-between mt-2 text-xs" style={{ color: "hsl(25,15%,50%)" }}>
                 <span>15 м²</span>
                 <span>500 м²</span>
               </div>
@@ -113,9 +113,9 @@ export function Calculator() {
                     onClick={() => setLevel(l.id)}
                     className="py-3 px-2 text-xs transition-all duration-300 rounded-sm"
                     style={{
-                      background: level === l.id ? "var(--gold)" : "rgba(201,168,76,0.05)",
-                      color: level === l.id ? "var(--dark-bg)" : "hsl(45, 30%, 70%)",
-                      border: level === l.id ? "1px solid var(--gold)" : "1px solid rgba(201,168,76,0.15)",
+                      background: level === l.id ? "var(--gold)" : "rgba(155,122,47,0.06)",
+                      color: level === l.id ? "#fff" : "hsl(25, 20%, 30%)",
+                      border: level === l.id ? "1px solid var(--gold)" : "1px solid rgba(155,122,47,0.2)",
                       fontWeight: level === l.id ? 600 : 400,
                     }}
                   >
@@ -140,14 +140,14 @@ export function Calculator() {
                       className="w-5 h-5 flex-shrink-0 rounded-sm transition-all duration-300 flex items-center justify-center"
                       style={{
                         background: opt.val ? "var(--gold)" : "transparent",
-                        border: opt.val ? "2px solid var(--gold)" : "2px solid rgba(201,168,76,0.3)",
+                        border: opt.val ? "2px solid var(--gold)" : "2px solid rgba(155,122,47,0.3)",
                       }}
                     >
-                      {opt.val && <Icon name="Check" size={12} style={{ color: "var(--dark-bg)" }} />}
+                      {opt.val && <Icon name="Check" size={12} style={{ color: "#fff" }} />}
                     </div>
                     <div className="flex-1">
-                      <span className="text-sm" style={{ color: "hsl(45,30%,80%)" }}>{opt.label}</span>
-                      <span className="ml-3 text-xs" style={{ color: "hsl(30,15%,45%)" }}>{opt.sub}</span>
+                      <span className="text-sm" style={{ color: "hsl(25,20%,30%)" }}>{opt.label}</span>
+                      <span className="ml-3 text-xs" style={{ color: "hsl(25,15%,50%)" }}>{opt.sub}</span>
                     </div>
                   </label>
                 ))}
@@ -159,9 +159,9 @@ export function Calculator() {
             <div
               className="rounded-sm p-10 relative overflow-hidden"
               style={{
-                background: "linear-gradient(145deg, #1C1610, #0D0A07)",
-                border: "1px solid rgba(201,168,76,0.3)",
-                boxShadow: "0 40px 80px rgba(0,0,0,0.6), inset 0 0 60px rgba(201,168,76,0.03)",
+                background: "linear-gradient(145deg, #ede6db, #f7f3ee)",
+                border: "1px solid rgba(155,122,47,0.3)",
+                boxShadow: "0 40px 80px rgba(100,80,40,0.12), inset 0 0 60px rgba(155,122,47,0.03)",
               }}
             >
               <div
@@ -174,24 +174,24 @@ export function Calculator() {
               </p>
 
               <div className="space-y-1 mb-8">
-                <div className="flex justify-between items-center py-3" style={{ borderBottom: "1px solid rgba(201,168,76,0.1)" }}>
-                  <span className="text-sm" style={{ color: "hsl(30,15%,55%)" }}>Ремонтные работы</span>
-                  <span className="font-body font-semibold text-sm" style={{ color: "hsl(45,30%,85%)" }}>
+                <div className="flex justify-between items-center py-3" style={{ borderBottom: "1px solid rgba(155,122,47,0.12)" }}>
+                  <span className="text-sm" style={{ color: "hsl(25,15%,45%)" }}>Ремонтные работы</span>
+                  <span className="font-body font-semibold text-sm" style={{ color: "hsl(25,25%,15%)" }}>
                     {fmt(workCost)} ₽
                   </span>
                 </div>
                 {materials && (
-                  <div className="flex justify-between items-center py-3" style={{ borderBottom: "1px solid rgba(201,168,76,0.1)" }}>
-                    <span className="text-sm" style={{ color: "hsl(30,15%,55%)" }}>Материалы</span>
-                    <span className="font-body font-semibold text-sm" style={{ color: "hsl(45,30%,85%)" }}>
+                  <div className="flex justify-between items-center py-3" style={{ borderBottom: "1px solid rgba(155,122,47,0.12)" }}>
+                    <span className="text-sm" style={{ color: "hsl(25,15%,45%)" }}>Материалы</span>
+                    <span className="font-body font-semibold text-sm" style={{ color: "hsl(25,25%,15%)" }}>
                       {fmt(materialsCost)} ₽
                     </span>
                   </div>
                 )}
                 {design && (
-                  <div className="flex justify-between items-center py-3" style={{ borderBottom: "1px solid rgba(201,168,76,0.1)" }}>
-                    <span className="text-sm" style={{ color: "hsl(30,15%,55%)" }}>Дизайн-проект</span>
-                    <span className="font-body font-semibold text-sm" style={{ color: "hsl(45,30%,85%)" }}>
+                  <div className="flex justify-between items-center py-3" style={{ borderBottom: "1px solid rgba(155,122,47,0.12)" }}>
+                    <span className="text-sm" style={{ color: "hsl(25,15%,45%)" }}>Дизайн-проект</span>
+                    <span className="font-body font-semibold text-sm" style={{ color: "hsl(25,25%,15%)" }}>
                       {fmt(designCost)} ₽
                     </span>
                   </div>
@@ -199,18 +199,18 @@ export function Calculator() {
               </div>
 
               <div className="flex justify-between items-end mb-10">
-                <span className="text-xs tracking-[0.2em] uppercase" style={{ color: "hsl(30,15%,50%)" }}>
+                <span className="text-xs tracking-[0.2em] uppercase" style={{ color: "hsl(25,15%,50%)" }}>
                   Итого от
                 </span>
                 <div className="text-right">
-                  <div className="font-display font-light" style={{ fontSize: "3rem", lineHeight: 1, color: "var(--gold-light)" }}>
+                  <div className="font-display font-light" style={{ fontSize: "3rem", lineHeight: 1, color: "var(--gold)" }}>
                     {fmt(total)}
                   </div>
-                  <div className="text-sm mt-1" style={{ color: "hsl(30,15%,50%)" }}>₽ включая НДС</div>
+                  <div className="text-sm mt-1" style={{ color: "hsl(25,15%,50%)" }}>₽ включая НДС</div>
                 </div>
               </div>
 
-              <div className="text-xs mb-8 p-4 rounded-sm" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.1)", color: "hsl(30,15%,50%)" }}>
+              <div className="text-xs mb-8 p-4 rounded-sm" style={{ background: "rgba(155,122,47,0.06)", border: "1px solid rgba(155,122,47,0.15)", color: "hsl(25,15%,50%)" }}>
                 Расчёт предварительный. Точная смета составляется после замера объекта — бесплатно.
               </div>
 
