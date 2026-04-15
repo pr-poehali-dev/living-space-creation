@@ -138,7 +138,7 @@ export function HeroSection({ scrollTo }: HeroSectionProps) {
                 а не случайность
               </h1>
               <p className="text-base leading-relaxed mb-12" style={{ color: "hsl(30,15%,55%)", maxWidth: 440 }}>
-                Ремонт под ключ — от дизайн-проекта до финального клининга. Сдаём в срок, гарантируем качество 5 лет.
+                Опыт нашей команды — более 100 реализованных объектов в Краснодаре. Постоянные мастера и стандарты на каждом этапе — чтобы результат был предсказуемым с первого дня.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button onClick={() => scrollTo("calculator")} className="btn-gold rounded-sm">
